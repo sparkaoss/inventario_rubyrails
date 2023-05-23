@@ -112,6 +112,10 @@ es:
       title_content: "Comentarios (%{count})"
       errors:
         empty_text: "El comentario no fue guardado, el texto estaba vacío."
+    materials:
+      name: "Nombre"
+      description: "Descripción"
+      created_at: "Fecha de creación"
     devise:
       username:
         title: "Nombre de usuario"
