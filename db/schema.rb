@@ -10,21 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_17_234855) do
-  create_table "active_admin_comments", force: :cascade do |t|
-    t.string "namespace"
-    t.text "body"
-    t.string "resource_type"
-    t.integer "resource_id"
-    t.string "author_type"
-    t.integer "author_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author"
-    t.index ["namespace"], name: "index_active_admin_comments_on_namespace"
-    t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource"
-  end
-
+ActiveRecord::Schema[7.0].define(version: 2023_05_24_234455) do
   create_table "admin_users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -38,19 +24,27 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_17_234855) do
   end
 
   create_table "materiales", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.integer "cantidad"
-    t.string "ubicacion"
+    t.string "nombre"
+    t.string "codigo"
+    t.decimal "precio_unitario"
+    t.string "cantidad"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "materials", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.integer "cantidad"
-    t.string "ubicacion"
+  create_table "proveedores", force: :cascade do |t|
+    t.string "nombre"
+    t.string "direccion"
+    t.integer "telefono"
+    t.string "correo"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "solicitudes", force: :cascade do |t|
+    t.string "nombre"
+    t.string "descripcion"
+    t.string "destino"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

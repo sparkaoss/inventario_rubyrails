@@ -12,16 +12,16 @@ ActiveAdmin.register_page "Dashboard" do
 
     # Here is an example of a simple dashboard with columns and panels.
     #
-    columns do
-      column do
-        panel "Recent Posts" do
-          ul do
-            Material.limit(5).map do |material|
-              li link_to(material.name, admin_material_path(material))
-            end
-          end
-        end
-      end
+    # columns do
+    #   column do
+    #     panel "Recent Posts" do
+    #       ul do
+    #         Material.limit(5).map do |material|
+    #           li link_to(material.name, admin_material_path(material))
+    #         end
+    #       end
+    #     end
+    #   end
 
     #   column do
     #     panel "Info" do
@@ -30,4 +30,4 @@ ActiveAdmin.register_page "Dashboard" do
     #   end
     end
   end # content
-end
+

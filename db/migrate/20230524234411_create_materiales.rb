@@ -1,10 +1,10 @@
 class CreateMateriales < ActiveRecord::Migration[7.0]
   def change
     create_table :materiales do |t|
-      t.string :name
-      t.text :description
-      t.integer :cantidad
-      t.string :ubicacion
+      t.string :nombre
+      t.string :codigo
+      t.decimal :precio_unitario
+      t.string :cantidad
 
       t.timestamps
     end

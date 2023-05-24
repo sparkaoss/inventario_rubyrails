@@ -2,12 +2,10 @@
 
 one:
   nombre: MyString
-  codigo: MyString
-  precio_unitario: 9.99
-  cantidad: MyString
+  descripcion: MyString
+  destino: MyString
 
 two:
   nombre: MyString
-  codigo: MyString
-  precio_unitario: 9.99
-  cantidad: MyString
+  descripcion: MyString
+  destino: MyString
