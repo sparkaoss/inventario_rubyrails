@@ -16,18 +16,18 @@ ActiveAdmin.register_page "Dashboard" do
     #   column do
     #     panel "Recent Posts" do
     #       ul do
-    #         Material.limit(5).map do |material|
-    #           li link_to(material.name, admin_material_path(material))
+    #         Materiale.limit(5).map do |materiale|
+    #           li link_to(materiales.name, admin_materiales_path(materiales))
     #         end
     #       end
     #     end
     #   end
 
-    #   column do
-    #     panel "Info" do
-    #       para "Welcome to ActiveAdmin."
-    #     end
-    #   end
+      # column do
+      #   panel "Info" do
+      #     para "Welcome to ActiveAdmin."
+      #   end
+      # end
     end
   end # content
 

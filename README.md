@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Pasos a seguir para la creación de un crud sencillo con Ruby on Rails y Active Admin
 
-Things you may want to cover:
 
-* Ruby version
+La presente guia esta redactada sobre:
 
-* System dependencies
+* Ruby 3.2.2
+* Rails 7.0.4.3
+* Active Admin 2.13.1
 
-* Configuration
+Para verificar las versiones, en terminal escribe:
+```sh
+ruby -v 
+rails -v 
+bundle show activeadmin
+```
 
-* Database creation
+## Gemas
 
-* Database initialization
+Agregar las siguientes gemas al archivo Gemfile.
+```sh
+gem "activeadmin"
+gem "devise"
+gem 'devise-i18n'
+gem 'i18n'
+gem 'rails-i18n'
+```
+## Configuraciones
 
-* How to run the test suite
+## Creacion de la Base de datos
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
