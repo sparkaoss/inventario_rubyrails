@@ -36,7 +36,7 @@ rails s
 ```
 
 ## Creacion de la Base de datos
-Rails permite la creacion rapida de las tablas para la base de datos.
+Rails permite la creacion rapida de las tablas para la base de datos, gracias a `Active Record`
 
 Ejemplo
 ```sh
